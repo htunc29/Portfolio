@@ -5,7 +5,7 @@ export default function PricingPage() {
   return (
     <div>
       <h1 className={title()}>Hizmetler</h1>
-      <div className="grid grid-cols-4 gap-4 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
       <Card className="py-4">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <p className="text-tiny font-bold">KURUMSAL WEB SİTELERİ</p>
