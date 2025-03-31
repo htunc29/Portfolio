@@ -6,7 +6,8 @@ import { Button } from "@heroui/button";
 import { useState } from "react";
 
 export default function ContactPage() {
-    const [submitted, setSubmitted] = useState(null);
+    const [submitted, setSubmitted] = useState<{ [key: string]: FormDataEntryValue } | null>(null);
+
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
