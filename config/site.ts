@@ -22,7 +22,7 @@ export const siteConfig = {
     },
     {
       label: "Hizmetler",
-      href: "/pricing",
+      href: "/services",
     },
     {
       label: "Blog",
@@ -48,7 +48,7 @@ export const siteConfig = {
     },
     {
       label: "Hizmetler",
-      href: "/pricing",
+      href: "/services",
     },
     {
       label: "Blog",
