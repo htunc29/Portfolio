@@ -4,7 +4,8 @@ import { Form } from "@heroui/form";
 import { Input, Textarea } from "@heroui/input";
 import { Button } from "@heroui/button";
 import { useState } from "react";
-
+import { CircularProgress } from "@heroui/progress";
+import { Alert } from "@heroui/alert";
 export default function ContactPage() {
     const [submitted, setSubmitted] = useState<{ [key: string]: FormDataEntryValue } | null>(null);
 
@@ -51,11 +52,17 @@ export default function ContactPage() {
                     <Input isRequired errorMessage="Lütfen adınızı giriniz" label="Ad Soyad" name="ad" placeholder="Adınızı giriniz" type="text" />
                     <Input isRequired errorMessage="Lütfen geçerli bir mail giriniz" label="Email" name="email" placeholder="Emailinizi giriniz" type="email" />
                     <Textarea isRequired errorMessage="Lütfen mesajınızı giriniz" label="Mesajınız" name="mesaj" placeholder="Mesajınızı yazın" />
-                    <Button type="submit" color={"primary"} variant={"flat"} disabled={loading}>
-                        {loading ? "Gönderiliyor..." : "Gönder"}
+                    <Button type="submit" className="w-full" color={"primary"} variant={"flat"} disabled={loading}>
+                        {loading ? (
+                            <div className="flex items-center">
+                                
+                                Gönderiliyor...
+                                <CircularProgress size="sm"  className="ml-2" />
+                            </div>
+                        ) : "Gönder"}
                     </Button>
-                    {error && <div className="text-red-500">{error}</div>}
-                    {success && <div className="text-green-500">{success}</div>}
+                    {error && <Alert color="danger" className="text-red-500" title={error}/>}
+                    {success && <Alert color="success" className="text-green-500" title={success}/>}
                 </Form>
             </div>
         </div>
