@@ -10,7 +10,7 @@ export default function ContactPage() {
 
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-    const [success, setSuccess] = useState(null);
+    const [success, setSuccess] = useState<string | null>(null);
 
     const onSubmit = async (e: any) => {
         e.preventDefault();
