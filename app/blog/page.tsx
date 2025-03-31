@@ -9,7 +9,7 @@ export default function BlogPage() {
     <div>
         <h1 className={title()}>Bloglar</h1>
         <div className={"mt-8"}>
-        <Alert color={"primary"} title={"Çok yakında buradayız"}/>
+        <Alert color={"danger"} title={"Şuan için blog bulunamadı"}/>
         </div>
 
     </div>
