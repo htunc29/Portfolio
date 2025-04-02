@@ -1,11 +1,11 @@
 import { title } from "@/components/primitives";
 import {Card, CardHeader, CardBody, CardFooter} from "@heroui/card";
 import {Image} from "@heroui/image";
-
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 export default function AboutPage() {
 
   return (
-    <div>
+    <BackgroundBeamsWithCollision className="bg-white dark:bg-black flex flex-col p-4">
       <h1 className={title()}>Hakkımda</h1>
         <Card className={"mt-4"}>
           <CardHeader className="flex gap-3">
@@ -31,6 +31,6 @@ export default function AboutPage() {
         </Card>
 
 
-    </div>
+    </BackgroundBeamsWithCollision>
   );
 }

@@ -31,7 +31,7 @@ export default function PricingPage() {
         <Image
           alt="Card background"
           className="object-cover rounded-xl"
-          src="https://www.altamira.ai/wp-content/uploads/2020/03/2-2-480x270.png"
+          src="https://experionglobal.com/wp-content/uploads/2024/10/What-is-Desktop-Application-Development.jpg"
           width={270}
         />
       </CardBody>
